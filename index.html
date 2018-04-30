@@ -1,0 +1,283 @@
+﻿<!doctype html>
+<html>
+<head>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<meta charset="utf-8">
+<title>Datos del alumnoo</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema1-app4.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+    <!--grupo JavaScript-->
+	<script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <!--   <script src="js/acciones.js"></script>-->
+    <script src="phonegap.js"></script><!-- necesario*/-->
+
+
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+</head>
+
+ <body onLoad="MM_preloadImages('archivosm/bibicletas.jpg','imagenes/2C.jpg','imagenes/2consecuencias.jpg')">
+ 
+ <div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Contaminación a mi comunidad</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación en mi Municipio</h1>
+     <div>
+      <p>Imagen de mi municipio:</p>
+      <br>
+     </div>
+     <div>   
+      <img src="imagenes/municipio.jpg" width="30%" height="30%">
+       </div>
+       </div>
+       </div>
+         
+   <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación en mi Localidad</h1>
+     <div>
+      <p>Imagen de mi Localidad:</p>
+      <br>
+     </div>
+     <div>                                                                                                                            
+      <img src="imagenes/localidad.jpeg" width="30%" height="30%">
+       </div>
+       </div>
+       </div>
+       <div>
+       <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+       <li class="ui-first-child ui-last-child">
+        <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Definición</h2>
+             <p>¿Qué es la contaminación?</p>
+         </a>
+         </li>
+         <li class="ui-first-child ui-last-child">
+          <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Tipos de contaminación</h2>
+              <p>Se muestran los tipos de contaminación que existen.</p>
+           </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+           <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Consecuencias</h2>
+               <p>Demostración de las consecuencias con enfoque al calentamiento global</p>
+           </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+           <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Reciclaje</h2>
+               <p>¿Qué es y como se clasifica el reciclaje?</p>
+           </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+           <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Medidas para combatirla</h2>
+             <p>Tips y consejos para combatir</p>
+           </a>
+           </li>
+           </ul>
+           </div>
+           <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+           <div>
+           <img src="imagenes/persona_rosa.png" width="46" height="46">
+           </div>
+           <div>
+           <h4>Aplicación tres</h4>
+           <h4>Yazmín Guzmán Merino.</h4>
+           </div>
+           </div>
+           </div>
+           <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+           <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+           <h1>DEFINICIÓN</h1>
+           </div>
+           <div data-role="content" align="center">
+           <div>
+           <h3> <center>Qué es la Contaminación:<p></center>
+
+<center>La contaminación es la presencia o acumulación de sustancias en el medio ambiente que afectan negativamente el entorno y las condiciones de vida <BR> Así como la salud o la higiene de los seres vivos.<p> Con este significado también se suele utilizar el concepto de contaminación ambiental.</center><BR>
+
+<center>Como contaminación también se denomina una alteración en una sustancia o un producto, como un alimento o una muestra. <BR>Por ejemplo: “La contaminación de las muestras obligó a los científicos a recoger nuevas muestras.</center> </h3>
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contaminacion','','imagenes/2C.jpg',1)"><img id="contaminacion" src="imagenes/1C.jpg" height="40%" width="40%"></a> </div>
+           </div>
+           <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+           <div>
+           <img src="imagenes/persona_rosa.png" width="46" height="46">
+           </div>
+           <h4>Aplicación tres,YGM</h4>
+           </div>
+           </div>
+           
+        <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+          <h1>TIPOS DE CONTAMINACIÓN</h1>
+          </div>
+          <div data-role="content" align="center">
+          <div>
+          <h3>1. Contaminación atmosférica <br>
+Es el tipo de contaminación que afecta a través del aire. <br> Uno de los contaminantes más conocidos en este sentido son el CO2, el metano y el humo proveniente de la combustión. <br>
+2. Contaminación hídrica:<br>
+Se trata del efecto de la emisión y liberación en las aguas de sustancias contaminantes.<br>
+
+3. Contaminación del suelo y del subsuelo:<br>
+Provocada por la filtración de sustancias en el suelo, genera alteraciones físicas y químicas.<br>
+
+4. Contaminación radiactiva: <br>
+Se trata de uno de los tipos de contaminación más peligrosos y agresivos con la vida.<br> Es producida por la liberación de material radiactivo <br>
+
+5. Contaminación térmica: <br>
+Uno de los tipos de contaminación menos conocidos. <br>es generado por el cambio de temperatura en el entorno o en diferentes medios debido a la actividad humana.<br>
+
+6. Contaminación visual: <br>
+Se refiere a los cambios visuales que se producen en la naturaleza debido a la actividad humana.<br>
+
+7. Contaminación lumínica: <br>
+la contaminación lumínica el elemento contaminante en sí es la emisión de luz fuera de lo que sería natural.<br>
+
+8. Contaminación acústica: <br>
+Este tipo de contaminación es el que viven, por ejemplo:Aquellas personas que viven en barrios muy turísticos en los que hay multitud de discotecas y establecimientos con música.<br></h3>
+     	  </div>
+          <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/contaminacin1.jpg" alt="Contaminación1" title="Contaminación1" id="wows1_0"/></li>
+		<li><img src="data1/images/contaminacin2.jpg" alt="Contaminación2" title="Contaminación2" id="wows1_1"/></li>
+		<li><img src="data1/images/contaminacin3.jpg" alt="Contaminación3" title="Contaminación3" id="wows1_2"/></li>
+		<li><img src="data1/images/contaminacin4.jpg" alt="Contaminación4" title="Contaminación4" id="wows1_3"/></li>
+		<li><img src="data1/images/contaminacin5.jpg" alt="Contaminación5" title="Contaminación5" id="wows1_4"/></li>
+		<li><img src="data1/images/contaminacin6.jpg" alt="Contaminación6" title="Contaminación6" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/contaminacin7.jpg" alt="http://wowslider.com/" title="Contaminación7" id="wows1_6"/></a></li>
+		<li><img src="data1/images/contaminacin8.jpg" alt="Contaminación8" title="Contaminación8" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Contaminación1"><span><img src="data1/tooltips/contaminacin1.jpg" alt="Contaminación1"/>1</span></a>
+		<a href="#" title="Contaminación2"><span><img src="data1/tooltips/contaminacin2.jpg" alt="Contaminación2"/>2</span></a>
+		<a href="#" title="Contaminación3"><span><img src="data1/tooltips/contaminacin3.jpg" alt="Contaminación3"/>3</span></a>
+		<a href="#" title="Contaminación4"><span><img src="data1/tooltips/contaminacin4.jpg" alt="Contaminación4"/>4</span></a>
+		<a href="#" title="Contaminación5"><span><img src="data1/tooltips/contaminacin5.jpg" alt="Contaminación5"/>5</span></a>
+		<a href="#" title="Contaminación6"><span><img src="data1/tooltips/contaminacin6.jpg" alt="Contaminación6"/>6</span></a>
+		<a href="#" title="Contaminación7"><span><img src="data1/tooltips/contaminacin7.jpg" alt="Contaminación7"/>7</span></a>
+		<a href="#" title="Contaminación8"><span><img src="data1/tooltips/contaminacin8.jpg" alt="Contaminación8"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wow slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+          </div>
+          <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+          <div>
+          <img src="imagenes/persona_rosa.png" width="46" height="46">
+          </div>
+          <h4>Aplicación tres,YGM</h4>
+          </div>
+          </div>
+           
+           
+          <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>CONSECUENCIAS DE LA CONTAMINACIÓN</h1>
+          </div>
+          <div data-role="content" align="center">
+          <div>
+          <h2>Estas Consecuencias, son inmensas. Pero dejaremos varios que son los principales destructores de la atmósfera y culpables del ya conocido calentamiento global y cambio climático:<br>
+
+<center>Deforestación e incendios de bosques.<br>
+
+Contaminación de las aguas, dulces y del mar.<br>
+
+Basureros a cielos abiertos y nucleares.<br>
+
+Destrucción por depredación de animales.<br>
+
+Caza indebida de animales y peces.<a href="http://www.monografias.com/trabajos101/consecuencias-contaminacion-atmosferica/consecuencias-contaminacion-atmosferica.shtml" target="_self"> Ir a la página en internet. </a>
+<br></center></h2>
+          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/2consecuencias.jpg',1)"><img src="imagenes/1consecuencias.jpg" width="600" height="394" id="Image26"></a></div>
+         </div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+          </div>
+          <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+          <div>
+          <img src="imagenes/persona_rosa.png" width="46" height="46">
+          </div>
+          <h4>Aplicación tres,YGM</h4>
+          </div>
+          </div>
+          
+          
+          <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>RECICLAJE</h1>
+          </div>
+          <div data-role="content" align="center">
+          <div>
+          <h2>
+Contenedores para distribuir los residuos en plástico (contenedor amarillo)<BR> Vidrio (contenedor verde) <BR>Papel o cartón (contenedor azul), para su posterior reciclado
+
+El reciclaje es un componente clave en la reducción de desechos contemporáneos y es el segundo componente de las 3R («Reducir, Reciclar y Reutilizar»).</h2> 
+           </div>
+          </div>
+          <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+          <div>
+          <img src="imagenes/persona_rosa.png" width="46" height="46">
+          </div>
+          <h4>Aplicación tres,YGM</h4>
+          </div>
+          </div>
+          
+          
+          <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>POR QUE SE CELEBRA EL DIA MUNDIAL DE LA BICICLETA</h1>
+          </div>
+          <div data-role="content" align="center">
+          <div>
+          <h3><center>El Día Mundial de la Bicicleta o Día de la Bicicleta se celebra en todo el mundo cada 19 de abril con la finalidad de promover el uso de este medio de transporte, llamar la atención <br> sobre los derechos de los ciclistas y destacar sus beneficios para la salud y para la movilidad sostenible. <br> La fecha hace referencia al 19 de abril de 1943, cuando Albert Hofmann, conocido como el padre del LSD, realizaba en su laboratorio un autoexperimeto con una sustancia para determinar sus efectos psicotrópicos, tras el cual su regreso a casa en bicicleta se tornaría famoso.1​2​3​ <br>
+          La fecha hace referencia al 19 de abril de 1943 cuando Albert Hofmann, conocido como el padre del LSD, <br> realizara en su laboratorio un experimento en el que ingirió 0,25 miligramos de ácido lisérgico (LSD) para ver sus efectos y tuvo que volver a casa en bicicleta porque a consecuencia de la guerra no estaba permitido el desplazamiento en vehículos a motor.</center> </h3></div>
+         <div>
+          <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+          <div>
+          <img src="imagenes/persona_rosa.png" width="46" height="46">
+          </div>
+          <h4>Aplicación tres,YGM</h4>
+          </div>
+          </div>   
+     </body>
+     </html>
+     
